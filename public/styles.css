@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html {
+    font-family: Space Grotesk;
+  }
+  body{
+    font-size: 12px;
+    color: hsl(278, 68%, 11%);
+  }
+
+.Form{
+    position: absolute;
+    left: 65%;
+    top: 20%;
+}
+form input{
+    
+    height: 40px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid rgb(227, 224, 224);
+    margin-bottom: 20px;
+    padding: 3px;
+    margin-top: 7px;
+    padding-left: 10px;
+}
+form .monthInput{
+    width: 60px;
+    
+}
+form .yearInput{
+    width: 60px;
+    margin: 10px;
+    
+}
+form .cvcInput{
+    width: 130px;  
+}
+button{
+    width: 270px;
+    height: 40px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: hsl(278, 68%, 11%);
+}
+.parent{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.desktopMain{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.mainMobile{
+    visibility: hidden;
+}
+.cardFront{
+    position: absolute;
+    top: 90px;
+    left: 200px;
+}
+.cardBack{
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}
+.defaultCardName{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: -620px;
+    left: 220px;
+}
+.defaultCardNumber{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: -700px;
+    left: 280px;
+}
+.defaultCardDate{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: -620px;
+    left: 550px;
+}
+.defaultCardCvc{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: -440px;
+    left: 650px;
+}
+.complete{
+    text-align: center;
+    position: absolute;
+    left: 65%;
+    top: 30%;
+}
+.complete h2{
+    padding-bottom: 20px;
+}
+.complete img{
+    padding-bottom: 20px;
+}
+.complete p{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    .desktopMain{
+        visibility: hidden;
+    }
+    .mainMobile{
+        visibility: visible;
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top: 0;
+        left: 0;
+    }
+    .cardFront{
+        z-index: 2;
+        top: 20%;
+        left: 20%;
+    }
+    .cardBack{
+        z-index: 1;
+        top: 5%;
+        left: 35%;
+    }
+    .Form{
+        position: absolute;
+        left: 30%;
+        top: 500px;
+    }
+    
+    form input{
+        
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid rgb(227, 224, 224);
+        margin-bottom: 20px;
+        padding: 3px;
+        margin-top: 7px;
+        padding-left: 10px;
+    }
+    form .monthInput{
+        width: 80px;
+        
+    }
+    form .yearInput{
+        width: 80px;
+        margin: 10px;
+        
+    }
+    form .cvcInput{
+        width: 220px;  
+    }
+    button{
+        width: 100%;
+        height: 40px;
+        color: white;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px;
+        background-color: hsl(278, 68%, 11%);
+    }
+    .defaultCardName{
+        color: white;
+        font-size: 15px;
+        z-index: 2;
+        top: -520px;
+        left: 240px;
+    }
+    .defaultCardNumber{
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        top: -600px;
+        left: 300px;
+    }
+    .defaultCardDate{
+        color: white;
+        font-size: 15px;
+        z-index: 2;
+        top: -520px;
+        left: 550px;
+    }
+    .defaultCardCvc{
+        color: white;
+        font-size: 15px;
+        z-index: 3;
+        top: -750px;
+        left: 710px;
+    }
+    .complete{
+        text-align: center;
+        position: absolute;
+        left: 40%;
+        top: 500px;
+        width: 25%;
+    }
+
+}
