@@ -1,23 +1,25 @@
 import React from "react";
-import Form from "./Form"
+import Form from "./Form";
+import image1 from "../assets/images/bg-main-desktop.png";
+import image2 from "../assets/images/bg-card-front.png";
+import image3 from "../assets/images/bg-card-back.png";
+import image4 from "../assets/images/bg-main-mobile.png";
 
 function App() {
   return (
     <div className="App">
-    <div className="parent">
-    <img className="desktopMain" src="images/bg-main-desktop.png" alt="img1" />
-    <img className="cardFront" src="images/bg-card-front.png" alt="img2" />
-    <img className="cardBack" src="images/bg-card-back.png" alt="img3" />
-    <img className="mainMobile" src="images/bg-main-mobile.png" alt="img4" />
+      <div className="parent">
+        <img className="desktopMain" src={image1} alt="img1" />
+        <img className="cardFront" src={image2} alt="img2" />
+        <img className="cardBack" src={image3} alt="img3" />
+        <img
+          className="mainMobile"
+          src={image4}
+          alt="img4"
+        />
+      </div>
 
-    {/* <p className="defaultCardName">JANE APPLESEED</p>
-    <p className="defaultCardDate" >00/00</p>
-    <p className="defaultCardNumber">0000 0000 0000 0000</p>
-    <p className="defaultardCvc">000</p> */}
-
-    </div>
-
-    <Form />
+      <Form />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import icon from "./Icons/icon-complete.svg"
 function Complete(){
     return(
         <div className="complete">
-            <img src={icon} />
+            <img src={icon} alt="icon" />
             <h2>THANK YOU!</h2>
             <p>We've added your card details</p>
             <button>Continue</button>
