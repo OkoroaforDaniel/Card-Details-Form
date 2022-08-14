@@ -45,7 +45,14 @@ function Form() {
   }
   function cvcChange() {
     setCvcchange(false);
+  
   }
+
+
+//   function myFunction(){
+//     document.getElementById("cvc").maxLength="3"
+//   }
+  
  
 
   return (
@@ -107,7 +114,6 @@ function Form() {
               onChange={handleChange}
               onClick={cvcChange}
               type="number"
-              max="3"
               placeholder="e.g. 123"
               name="cardCvc"
               value={input.cardCvc}
@@ -118,7 +124,7 @@ function Form() {
       ) : (
         <Complete />
       )}
-
+      
       <div className="parent">
         <p className="defaultCardName" onchange={nameChange}>
           {namechange === true ? "JANE APPLESEED" : input.cardholderName}
